@@ -5,15 +5,22 @@ import { SIZES, COLORS } from "../../constants";
 import { Feather } from "@expo/vector-icons";
 import { TextInput } from "react-native-gesture-handler";
 import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Welcome = () => {
+  const navigation = useNavigation();
   return (
     <View>
       <View style={styles.container}>
         <Text style={styles.welcomeTxt(COLORS.black, SIZES.xSmall)}>
           Find the most
         </Text>
-        <Text style={styles.welcomeTxt(COLORS.primary, 0)}>
+        <Text
+          style={[
+            styles.welcomeTxt(COLORS.primary, 0),
+            { marginTop: -SIZES.xSmall },
+          ]}
+        >
           Luxurious Furniture
         </Text>
       </View>
@@ -26,7 +33,7 @@ const Welcome = () => {
           <TextInput
             style={styles.searchInput}
             value=""
-            onPressIn={() => {}}
+            onPressIn={() => navigation.navigate("Search")}
             placeholder="What are you looking for"
           />
         </View>

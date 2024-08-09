@@ -5,23 +5,23 @@ import { Ionicons } from "@expo/vector-icons";
 import { COLORS } from '../../constants';
 import { useNavigation } from '@react-navigation/native';
 
-const ProductCardView = () => {
+const ProductCardView = ({item}) => {
     const navigation = useNavigation();
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails")}>
+    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails", {item})}>
         <View style={styles.container}>
             <View style={styles.imageContainer}>
                 <Image
-                source={{uri: "https://i.pinimg.com/736x/9b/57/1f/9b571fe1ae0ddefd5dcfd071686b64d4.jpg"}}
+                source={{uri: item.imageUrl}}
                 // source={product1}
                 style={styles.image}
                 />
             </View>
 
             <View style={styles.details}>
-                <Text style={styles.title} numberOfLines={1}>Product Lorem ipsum dolor sit amet.</Text>
-                <Text style={styles.supplier} numberOfLines={1}>Product</Text>
-                <Text style={styles.price}>$5400</Text>
+                <Text style={styles.title} numberOfLines={1}>{item.title}</Text>
+                <Text style={styles.supplier} numberOfLines={1}>{item.supplier}</Text>
+                <Text style={styles.price}>${item.price}</Text>
             </View>
             <TouchableOpacity style={styles.addBtn}>
                 <Ionicons name='add-circle' size={35} color={COLORS.primary}/>

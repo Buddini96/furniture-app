@@ -36,6 +36,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: SIZES.medium,
         backgroundColor: COLORS.primary
+    },
+    searchImage: {
+        resizeMode: "contain",
+        width: SIZES.width -80,
+        height: SIZES.height -300,
+        opacity: 0.9,
+        marginLeft: SIZES.small
     }
 });
 

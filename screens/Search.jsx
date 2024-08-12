@@ -63,7 +63,7 @@ const Search = () => {
           renderItem={({item}) => (<SearchTile item={item}/>)}
           style={{marginHorizontal: 12}}
         />
-      )}
+      )} 
     </SafeAreaView>
   );
 };

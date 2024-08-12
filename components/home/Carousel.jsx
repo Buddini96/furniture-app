@@ -6,8 +6,10 @@ import bg from '../../assets/images/bg.jpg';
 
 const Carousel = () => {
   const slides = [
-    "https://i.pinimg.com/736x/9b/57/1f/9b571fe1ae0ddefd5dcfd071686b64d4.jpg",
-    bg,
+    "https://i.pinimg.com/564x/6f/0f/2c/6f0f2cb83aeae34aea3f8805dd626891.jpg",
+    "https://i.pinimg.com/564x/24/40/fd/2440fd94047ad0be0e89dec64a507bc6.jpg",
+    // "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/AGB79lDMa2HpoQL6/landing_page_banner_01-YX4WON76MKCrgBnp.jpg",
+    
     "https://i.pinimg.com/736x/fa/4f/80/fa4f802cc408f227a491f1196568760a.jpg",
   ];
 
@@ -30,6 +32,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 350, // Increase the height as needed
     backgroundColor: '#ddd',
+    resizeMode: 'cover'
   },
 });
 

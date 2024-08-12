@@ -4,16 +4,16 @@ import { COLORS, SIZES } from "../../constants/index";
 const styles = StyleSheet.create({
     container: {
         width: 182,
-        height: 220,
+        height: 270,
         borderRadius: SIZES.medium,
         // marginEnd: 20,
-        backgroundColor: COLORS.secondary
+        backgroundColor: '#e4e4e4'
     },
     imageContainer: {
         flex: 1,
-        width: 170,
-        marginLeft: SIZES.small/2,
-        marginTop: SIZES.small/2,
+        // width: 170,
+        // marginLeft: SIZES.small/2,
+        // marginTop: SIZES.small/2,
         borderRadius: SIZES.small,
         overflow: "hidden",
     },
@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
         padding: SIZES.small
     },
     title: {
-       fontFamily: "bold",
-       fontSize: SIZES.large,
+       fontFamily: "semibold",
+       fontSize: SIZES.medium,
        marginBottom: 2
     },
     supplier: {
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
      price: {
         fontFamily: "bold",
         fontSize: SIZES.medium, 
+        color: COLORS.gray
      },
      addBtn: {
         position: "absolute",

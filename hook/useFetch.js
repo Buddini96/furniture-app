@@ -12,7 +12,7 @@ const useFetch = () => {
   
     try {
       const response = await axios.get('http://10.0.2.2:3000/api/products/');
-    //   console.log("Data fetched successfully:", response.data);
+      // console.log("Data fetched successfully:", response.data);
       setData(response.data);
     } catch (err) {
       console.log("Error fetching data:", err);

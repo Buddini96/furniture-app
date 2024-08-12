@@ -3,7 +3,7 @@ import { COLORS, SIZES } from "../../constants/index";
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: SIZES.xSmall,
+    marginTop: SIZES.xxSmall,
     marginLeft: 12,
   },
 });

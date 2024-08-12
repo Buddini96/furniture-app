@@ -12,7 +12,7 @@ const Welcome = () => {
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.welcomeTxt(COLORS.black, SIZES.xSmall)}>
+        {/* <Text style={styles.welcomeTxt(COLORS.black, SIZES.xSmall)}>
           Find the most
         </Text>
         <Text
@@ -22,10 +22,10 @@ const Welcome = () => {
           ]}
         >
           Luxurious Furniture
-        </Text>
+        </Text> */}
       </View>
 
-      <View style={styles.searchContainer}>
+      {/* <View style={styles.searchContainer}>
         <TouchableOpacity>
           <Feather name="search" size={24} style={styles.searchIcon} />
         </TouchableOpacity>
@@ -47,7 +47,7 @@ const Welcome = () => {
             />
           </TouchableOpacity>
         </View>
-      </View>
+      </View> */}
     </View>
   );
 };

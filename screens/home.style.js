@@ -7,8 +7,13 @@ const styles = StyleSheet.create({
         fontSize: 40
     },
     appBarWrapper: {
+        position: "absolute", // Add this line
+        top: 10,              // Add this line
+        left: 0,             // Add this line
+        right: 0,            // Add this line
+        zIndex: 100,         // Add this line to make sure it overlays the carousel
         marginHorizontal: 22,
-        marginTop: SIZES.small
+        marginTop: SIZES.small,
     },
     appBar: {
         flexDirection: "row",
@@ -23,7 +28,7 @@ const styles = StyleSheet.create({
     },
     cartCount: {
         position: "absolute",
-        bottom: 16,
+        bottom: 25,
         width: 16,
         height: 16,
         borderRadius: 8,
@@ -31,14 +36,23 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "green",
         justifyContent: "center",
-       
     },
     cartNumber: {
         fontFamily: "regular",
         fontWeight: "600",
         fontSize: 11,
         color: COLORS.lightWhite
+    },
+    carouselContainer: {
+        width: '100%',
+        height: 250,
+        backgroundColor: '#ddd',
+    },
+    searchIcon: {
+        color: 'white'
+    }, bag: {
+        color: 'white'
     }
-})
+});
 
 export default styles;

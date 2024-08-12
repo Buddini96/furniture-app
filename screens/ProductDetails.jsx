@@ -26,11 +26,11 @@ const ProductDetails = ({ navigation }) => {
     <View style={styles.container}>
       <View style={styles.upperRow}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Ionicons name="chevron-back-circle" size={30} />
+          <Ionicons name="chevron-back-circle" size={30} color={COLORS.white}/>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => {}}>
-          <Ionicons name="heart" size={30} color={COLORS.red} />
+          <Ionicons name="heart" size={30} color={COLORS.white} />
         </TouchableOpacity>
       </View>
       <Image

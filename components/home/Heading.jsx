@@ -13,7 +13,7 @@ const Heading = () => {
       <View style={styles.header}>
         <Text style={styles.headerTitle}>New Rivals</Text>
         <TouchableOpacity onPress={() => navigation.navigate("ProductList")}>
-            <Ionicons name="ios-grid" size={24} color={COLORS.primary} style={{marginRight: 12}} />
+            <Ionicons name="chevron-forward" size={24} color={COLORS.black} style={{marginRight: 12}} />
         </TouchableOpacity>
       </View>
     </View>

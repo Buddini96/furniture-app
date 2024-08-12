@@ -43,7 +43,6 @@ const Home = () => {
         <Categories />
         <Heading />
         <ProductRow />
-        {/* <ProductScreen /> */}
       </ScrollView>
       </>
   );
